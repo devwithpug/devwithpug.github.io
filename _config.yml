@@ -11,7 +11,7 @@ title:            devwithpug
 tagline:          'GitHub Blog'
 description:      '공부하며 끄적이는 장소'
 url:              'https://devwithpug.github.io'
-baseurl:          /
+baseurl:          ''
 
 author:
   name:           'Choi Jungyu'
