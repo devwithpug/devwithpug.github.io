@@ -1,0 +1,26 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+#relative_permalinks: true
+
+# Setup
+title:            devwithpug
+tagline:          'GitHub Blog'
+description:      '공부하며 끄적이는 장소'
+url:              'https://devwithpug.github.io'
+baseurl:          /
+
+author:
+  name:           'Choi Jungyu'
+  url:            ''
+plugins: [jekyll-paginate]
+paginate:         5
+
+# Custom vars
+#version:          2.1.0
+
+github:
+  repo:           https://github.com/devwithpug

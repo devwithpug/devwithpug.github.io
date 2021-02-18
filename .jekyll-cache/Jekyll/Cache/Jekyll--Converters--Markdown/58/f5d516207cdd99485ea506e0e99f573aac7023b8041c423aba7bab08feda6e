@@ -1,0 +1,12 @@
+I"�<h1 id="python">python</h1>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">지킬</span>
+
+<span class="k">def</span> <span class="nf">study_jekyll</span><span class="p">():</span>
+    
+    <span class="k">print</span><span class="p">(</span><span class="s">'블로그 공부하고 있습니다!'</span><span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>end of file.</p>
+:ET
