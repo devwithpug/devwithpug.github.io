@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 안녕하세요
-
+comments: true
 categories:
     - blog
 ---
