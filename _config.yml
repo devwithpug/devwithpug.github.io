@@ -24,3 +24,12 @@ paginate:         5
 
 github:
   repo:           https://github.com/devwithpug
+
+# defaults
+defaults:
+  #_posts
+  scope:
+    path: ''
+    type: post
+  values:
+    comments: true
