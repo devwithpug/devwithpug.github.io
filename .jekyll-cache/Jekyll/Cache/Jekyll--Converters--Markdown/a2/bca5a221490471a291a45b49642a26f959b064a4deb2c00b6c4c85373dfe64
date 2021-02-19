@@ -1,4 +1,4 @@
-I"T6<h1 id="디스코드-봇을-만들어보자">디스코드 봇을 만들어보자!</h1>
+I"t6<h1 id="디스코드-봇을-만들어보자">디스코드 봇을 만들어보자!</h1>
 
 <p>가장 먼저 할것은 간단한 디스코드 봇을 만들어보는것 입니다. 파이썬에 대한 기본 지식만 있다면 누구든지 쉽게 만들어볼 수 있습니다.</p>
 <hr />
@@ -44,7 +44,7 @@
   <li>
     <p><code class="language-plaintext highlighter-rouge">@bot.event</code> <br />
 어떤 이벤트가 발생할때 봇이 그 사건을 인식하고 코드에 작성된대로 작동하는 것<br />
-예를 들어 <strong>봇이 시작된경우</strong>, <strong>봇이 새로운 서버에 접속한 경우</strong>, <strong>새로운 사람이 서버에 입장한 경우</strong>, <strong>어떤 사람이 보이스 채널에 접속한 경우</strong> 등 수많은 이벤트들이 존재합니다. 이는 <a href="https://discordpy.readthedocs.io/en/latest/api.html?highlight=event#discord-api-events">discord.py 문서 홈페이지</a>에서 찾아볼 수 있습니다.</p>
+예를 들어 <strong>봇이 시작된경우</strong>, <strong>봇이 새로운 서버에 접속한 경우</strong>, <strong>새로운 사람이 서버에 입장한 경우</strong>, <strong>어떤 사람이 보이스 채널에 접속한 경우</strong> 등 수많은 이벤트들이 존재합니다. 이는 <a href="https://discordpy.readthedocs.io/en/latest/api.html?highlight=event#discord-api-events" target="_blank">discord.py 문서 홈페이지</a>에서 찾아볼 수 있습니다.</p>
 
     <p>앞서 저희가 작성한 코드를 보면 <code class="language-plaintext highlighter-rouge">on_ready()</code> 이벤트가 발생시 해당 print문이 작동하게 되는 것 입니다. 이때 <code class="language-plaintext highlighter-rouge">on_ready()</code> 이벤트는 봇이 실행되어 디스코드 서버에 접속하여 데이터를 전달받을 준비가 끝난 경우를 뜻합니다.</p>
   </li>
@@ -61,7 +61,7 @@
 <hr />
 <p>기본적인 봇의 작성은 끝났지만 봇을 실제로 작동시키려면 <strong>해당 봇이 가지는 고유한 토큰 값이 있어야 합니다.</strong> 이는 디스코드 계정만 있다면 쉽게 토큰 값을 얻을 수 있습니다.</p>
 
-<p>먼저 <a href="https://discord.com/developers/docs/intro">Discord Developer Portal</a> 에 접속하여 디스코드 계정으로 로그인 한뒤 <strong>Applications</strong> 로 이동해봅시다.</p>
+<p>먼저 <a href="https://discord.com/developers/docs/intro" target="_blank">Discord Developer Portal</a> 에 접속하여 디스코드 계정으로 로그인 한뒤 <strong>Applications</strong> 로 이동해봅시다.</p>
 
 <p><img src="https://user-images.githubusercontent.com/69145799/108463845-7bbae580-72c2-11eb-9fdf-cf79f7c426ea.png" alt="discord" /></p>
 
