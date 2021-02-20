@@ -1,14 +1,0 @@
-I"<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">첫번째_게시글</span> <span class="k">from</span> <span class="n">devwithpug</span><span class="p">.</span><span class="n">github</span><span class="p">.</span><span class="n">io</span>
-
-<span class="k">class</span> <span class="nc">devwithpug</span><span class="p">:</span>
-    
-    <span class="k">def</span> <span class="nf">sayHello</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">print</span><span class="p">(</span><span class="s">'안녕하세요! 저는 프로그래밍을 공부하고 있는 학생입니다.</span><span class="se">\
-</span><span class="s">            앞으로 공부하면서 여러 정보들을 블로그에 끄적여보려고합니다.</span><span class="se">\
-</span><span class="s">                Email: zmfjscl789@gmail.com'</span><span class="p">)</span>
-
-<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">"__main__"</span><span class="p">:</span>
-    <span class="n">devwithpug</span><span class="p">().</span><span class="n">sayhello</span><span class="p">()</span>
-
-</code></pre></div></div>
-:ET
