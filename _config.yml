@@ -22,3 +22,10 @@ paginate:         5
 
 github:
   repo:           https://github.com/devwithpug
+
+# Google Analytics
+analytics:
+  provider:       "google-gtag"
+  google:
+    tracking_id:   "G-881EHN28BC"
+    anonymize_ip:   # false (default)
