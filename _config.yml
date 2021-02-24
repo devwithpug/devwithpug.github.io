@@ -3,8 +3,7 @@ markdown:         kramdown
 highlighter:      rouge
 
 # Permalinks
-# permalink:        pretty
-permallink: /:year/:month/
+permalink:        pretty
 #relative_permalinks: true
 
 # Setup
@@ -17,16 +16,8 @@ baseurl:          ''
 author:
   name:           'Choi Jungyu'
   url:            ''
-plugins:
-  - jekyll-paginate-v2
-
-pagination:
-  enabled: true
-  per_page: 1
-  limit: 0
-  sort_field: 'date'
-  sort_reverse: true
-  title: ':title'
+plugins: [jekyll-paginate]
+paginate:         1
 
 
 github:
