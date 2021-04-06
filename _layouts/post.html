@@ -3,6 +3,14 @@ layout: default
 ---
 
 <div class="post">
+  <aside class="sidebar__right sticky" style="height: auto !important;">
+  <div class="toc">
+    <!-- <p style="color: aqua; font-size: 17px; line-height: 1em;">목차</p> -->
+    <b style="line-height: 2rem;">&nbsp;&nbsp;목차</b>
+    <hr>
+    {% include toc.html html=content sanitize=true h_min=1 h_max=4 %}
+  </div>
+  </aside>
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {{ content }}
