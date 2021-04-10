@@ -8,6 +8,8 @@ categories:
 
 # 블로그 댓글 시스템 변경 (21/4/9)
 
+- - -
+
 개인 블로그를 만들어가면서 댓글 시스템으로 DISQUS를 사용해오고 있었는데 이번에 Utterances로 전환하게 되었는데 간단하게 내용을 정리해보려고 합니다.
 
 ## DISQUS의 광고
@@ -23,6 +25,8 @@ Jekyll 블로그를 처음 시작하면서 여러 설정을 하던 중 DISQUS의
 개인 블로그의 목적이 수익도 아니고 오로지 공부를 위한 블로그이기 때문에 DISQUS보다 가볍고, 광고가 없는 다른 댓글 시스템을 찾아봐야 겠다고 생각했습니다.
 
 # Utterances
+
+- - -
 
 Utterances는 Github 레포지토리에서 제공하는 Issue 시스템을 기반으로 하여 블로그의 댓글을 작성할 수 있게 해주는 lightweight한 댓글 위젯입니다.
 
@@ -124,6 +128,8 @@ categories:
 저는 Issue 매핑 방식을 페이지 경로 이름으로 설정했습니다. 처음 Utterances를 설정 할 때 여러가지 선택지가 있으니까 개인 취향에 맞게 설정하면 될것 같습니다.
 
 # References
+
+- - -
 
 * [https://utteranc.es](https://utteranc.es){:target="_blank"}
 
