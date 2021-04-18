@@ -186,7 +186,7 @@ $ sudo apt upgrade
 
 우분투에 대한 설정은 완료된 것 같아서 MariaDB를 설치해주었다.
 
-[MariaDB 공식 홈페이지](https://downloads.mariadb.org/mariadb/repositories/){:target="_blank"}의 설치법을 보고 진행하였다. MariaDb의 버전은 가장 최신 Stable 버전인 10.5를 설치했다.
+[MariaDB 공식 홈페이지](https://downloads.mariadb.org/mariadb/repositories/){:target="_blank"}의 설치법을 보고 진행하였다. MariaDB의 버전은 가장 최신 Stable 버전인 10.5를 설치했다.
 
 ```console
 $ sudo apt-get install software-properties-common
