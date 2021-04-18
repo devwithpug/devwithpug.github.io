@@ -132,7 +132,7 @@ See "man sudo_root" for details.
 ubuntu@devwithpug:~$
 ```
 
-윈도우 환경에서 PowerShell을 통한 SSH 연결에 성공했다! 이후에 priavate 키를 맥북에도 넣어주었고 MacOS 환경에서 정상적으로 연결되는 것을 확인했다.
+윈도우 환경에서 PowerShell을 통한 SSH 연결에 성공했다! 이후에 개인 키를 맥북에도 넣어주었고 MacOS 환경에서 정상적으로 연결되는 것을 확인했다.
 
 ## 공용 서브넷 포트 설정
 
