@@ -1,5 +1,4 @@
 {% capture tocWorkspace %}
-
     {% comment %}
         Copyright (c) 2017 Vladimir "allejo" Jimenez
 
@@ -81,6 +80,7 @@
     {% assign lastLevel = 0 %}
 
     {% capture listModifier %}{% if orderedList %}ol{% else %}ul{% endif %}{% endcapture %}
+
     {% for node in nodes %}
         {% if node == "" %}
             {% continue %}
@@ -130,6 +130,7 @@
             {% if include.anchor_class %}
                 {% capture anchorAttributes %}{{ anchorAttributes }} class="{{ include.anchor_class | split: '.' | join: ' ' }}"{% endcapture %}
             {% endif %}
+
             {% capture listItem %}<a{{ anchorAttributes }}>{{ anchorBody }}</a>{% endcapture %}
         {% elsif skipNoIDs == true %}
             {% continue %}

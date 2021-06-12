@@ -1,9 +1,9 @@
 ---
-layout: post
 title: '파이썬의 얕은 복사(shallow copy), 깊은 복사(deep copy)'
-comments: true
-categories:
-    - python
+categories: python
+tags: ['python', 'deepcopy']
+header:
+    teaser: /assets/teasers/python.jpg
 ---
 
 # 개요

@@ -1,9 +1,9 @@
 ---
-layout: post
 title: 안녕하세요
-comments: true
-categories:
-    - blog
+categories: blog
+tags: ['blog']
+header:
+    teaser: /assets/teasers/happy-pug.jpg
 ---
 ```python
 import 첫번째_게시글 from devwithpug.github.io

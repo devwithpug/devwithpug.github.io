@@ -1,9 +1,9 @@
 ---
-layout: post
 title: 'DISQUS -> Utterances 블로그 댓글 시스템 변경'
-comments: true
-categories:
-    - blog
+categories: blog
+tags: ['blog']
+header:
+    teaser: /assets/teasers/happy-pug.jpg
 ---
 
 # 블로그 댓글 시스템 변경 (21/4/9)

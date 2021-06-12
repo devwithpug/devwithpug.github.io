@@ -1,9 +1,9 @@
 ---
-layout: post
 title: '[오라클 클라우드] 외부 접속이 가능한 MariaDB 서버 구축기'
-comments: true
-categories:
-    - mariadb
+categories: database
+tags: ['database', 'mariadb', 'oracle', 'ubuntu']
+header:
+    teaser: /assets/teasers/mariadb.jpg
 ---
 
 # 1. 개요

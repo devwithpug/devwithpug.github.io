@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<script>
+    function linkToRandomBlogPost() {
+    var allPosts = [
+        {% for post in site.posts %}
+        "{{ post.url | prepend: site.baseurl }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]; //-- 1
+
+    return allPosts[Math.floor(Math.random() * allPosts.length)]; //-- 2
+  }
+
+  location.replace(linkToRandomBlogPost()) //-- 3
+</script>

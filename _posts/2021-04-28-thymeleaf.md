@@ -1,9 +1,9 @@
 ---
-layout: post
 title: 'Thymeleaf - 유용한 문법 정리'
-comments: true
-categories:
-    - spring
+categories: spring
+tags: ['spring', 'thymeleaf']
+header:
+    teaser: /assets/teasers/thymeleaf.jpg
 ---
 
 # 개요

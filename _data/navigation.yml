@@ -1,0 +1,12 @@
+# main links
+main:
+  - title: "Random"
+    url: /random/
+  - title: "About"
+    url: /about/
+  - title: "Post"
+    url: /year-archive/
+  - title: "Category"
+    url: /categories/
+  - title: "Tag"
+    url: /tags/

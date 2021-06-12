@@ -1,10 +1,8 @@
 source "https://rubygems.org"
-
-gem "jekyll", "~> 4.0"
-gem "jekyll-paginate", "~> 1.1.0"
-gem "jekyll-sitemap"
-gem "jekyll-gist"
-gem "jekyll-feed"
-gem "jemoji"
-
+# init
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
+# for debug
 gem "webrick", "~> 1.7"
+# for create auto categories
+gem "jekyll-archives", "~> 2.2"
