@@ -20,9 +20,18 @@ __Java, Spring, JPA, MySQL, Python__
 * 2017.03 ~ 경기대학교 컴퓨터공학부 학사과정
 
 ## 프로젝트
+
+#### 2021
+
 * [Booking_System](https://github.com/devwithpug/Booking_System){:target="_blank"}
     - 레스토랑 예약 웹 프로그래밍
-    - __Java, Spring, DataJpa, MariaDB__
+    - __Java, Spring, DataJPA, MariaDB__
+* [emotion_detect_project](https://github.com/devwithpug/emotion_detect_project){:target="_blank"}
+    - 얼굴 표정 인식 모델 학습 & 학습한 모델을 이용한 웹 서비스
+    - __pytorch, Django, Spring, REST API__
+
+#### 2020
+
 * [FTA](https://github.com/devwithpug/FTA){:target="_blank"}
     - World of Warcraft API, mongoDB를 이용한 경매장 봇
     - __Python, mongoDB, discord.py__
