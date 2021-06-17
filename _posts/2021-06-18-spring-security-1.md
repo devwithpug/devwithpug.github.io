@@ -51,6 +51,42 @@ class MySecurityConfig extends WebSecurityConfigurerAdapter {
 }
 ```
 
+* `@Order` 를 이용하여 다중 시큐리티 설정 또한 가능하다. (순서 중요)
+
+```java
+@Configuration
+@EnableWebSecurity
+@Order(1)
+class MySecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                .authorizeRequests()
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
+        ;
+    }
+}
+
+@EnableWebSecurity
+@Order(0)
+class AdminSecurityConfig extends WebSecurityConfigurerAdapter {
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+                .authorizeRequests()
+                .antMatchers("/admin").hasRole("ADMIN")
+                .anyRequest().authenticated()
+                .and()
+                .formLogin()
+        ;
+    }
+}
+```
+
 ## 각 필터 설명
 
 [![image](https://user-images.githubusercontent.com/69145799/122347233-c99bdd80-cf84-11eb-8da4-4b61fa75432f.png)](https://user-images.githubusercontent.com/69145799/122347233-c99bdd80-cf84-11eb-8da4-4b61fa75432f.png)
