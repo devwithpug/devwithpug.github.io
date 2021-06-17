@@ -160,9 +160,9 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 0. 사용자가 서버에 접근 (localhost:8080/)
 1. 위와 같이 Form 인증을 동일한 계정으로 수행
-2. `SessionManagementFilter` -> `ConcurrentSession` 존재하는 경우 두가지 전략으로 처리
-    (1) `SessionAuthenticationException` : 새로운 인증 시도 차단
-    (2) `session.expireNow()` : 이전 사용자 세션 만료
+2. `SessionManagementFilter` -> `ConcurrentSession` 존재하는 경우 아래와 같은 두가지 전략으로 처리
+    - (1) `SessionAuthenticationException` : 새로운 인증 시도 차단
+    - (2) `session.expireNow()` : 이전 사용자 세션 만료
 
 * __session.expireNow() 를 통해 이전 사용자 세션이 만료된 경우__
 
@@ -186,9 +186,9 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
 2. `FilterSecurityInterceptor` -> `AccessDecisionManager`에게 인가 처리 위임
 3. `AccessDecisionManager` -> `AccessDecisionVoter` 객체들에게 인가 여부 판단 요청
 4. Voter 들에게서 리턴 받은 값을 통해 설정된 전략으로 인가 여부를 판단
-    (1) AffirmativeBased: 하나의 Voter라도 허가 한 경우 인가 승인
-    (2) ConsensusBased: 다수표로 판단
-    (3) UnanimousBased: 모든 Voter가 허가해야 인가 승인
+    - (1) AffirmativeBased: 하나의 Voter라도 허가 한 경우 인가 승인
+    - (2) ConsensusBased: 다수표로 판단
+    - (3) UnanimousBased: 모든 Voter가 허가해야 인가 승인
 5. Admin 권한이 없으므로 `AccessDeniedException` 발생
 
 # References
