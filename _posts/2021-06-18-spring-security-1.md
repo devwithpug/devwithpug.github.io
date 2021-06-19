@@ -70,7 +70,7 @@ class MySecurityConfig extends WebSecurityConfigurerAdapter {
     }
 }
 
-@EnableWebSecurity
+@Configuration
 @Order(0)
 class AdminSecurityConfig extends WebSecurityConfigurerAdapter {
 
