@@ -12,7 +12,7 @@ header:
 
 # 개요
 
-![image](https://user-images.githubusercontent.com/69145799/122529917-edc8ee80-d058-11eb-8e22-8c70eba60de9.png)
+![image](https://user-images.githubusercontent.com/69145799/122529917-edc8ee80-d058-11eb-8e22-8c70eba60de9.png){:.align-center}
 
 > ⬆ 인증 실패 처리에 대한 예외 메세지를 클라이언트에게 제공하는 로그인 페이지
 
@@ -79,11 +79,11 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
 
 * 인증 실패 디버깅
 
-![image](https://user-images.githubusercontent.com/69145799/122529524-8b6fee00-d058-11eb-99c9-635bd5a797f8.png)
+![image](https://user-images.githubusercontent.com/69145799/122529524-8b6fee00-d058-11eb-99c9-635bd5a797f8.png){:.align-center}
 
 * 페이지 리다이렉트 결과
 
-![image](https://user-images.githubusercontent.com/69145799/122529874-e4d81d00-d058-11eb-8fea-d7922ad59e82.png)
+![image](https://user-images.githubusercontent.com/69145799/122529874-e4d81d00-d058-11eb-8fea-d7922ad59e82.png){:.align-center}
 
 > ⬆ `/login?error=true&exception=` URL에서 인코딩 오류 발생
 
@@ -162,7 +162,7 @@ public class CustomAuthenticationFailureHandler extends SimpleUrlAuthenticationF
 
 * 페이지 리다이렉트 결과
 
-![image](https://user-images.githubusercontent.com/69145799/122534061-21a61300-d05d-11eb-91d0-02ac52cd0a7b.png)
+![image](https://user-images.githubusercontent.com/69145799/122534061-21a61300-d05d-11eb-91d0-02ac52cd0a7b.png){:.align-center}
 
 
 # References
