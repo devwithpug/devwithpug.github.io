@@ -39,8 +39,9 @@ __Java, Spring, JPA, MySQL, Python__
     - Riot API를 이용한 League of Legends 실시간 매치 알림 봇
     - __Python, discord.py__
 
-## 수상 경력
+## 수상 경력 & 자격증
 
+* 2021.05 TOPCIT 15회 정기평가 3등급 (496점)
 * 2017.06 교내 프로그래밍 경진대회 장려상
 
 ## 연락처
