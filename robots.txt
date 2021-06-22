@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://devwithpug.github.io/sitemap.xml
