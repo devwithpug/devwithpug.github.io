@@ -4,6 +4,7 @@ categories: spring
 tags: ['spring', 'springsecurity', 'java', 'url', 'encode']
 header:
     teaser: /assets/teasers/springsecurity.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 
 스프링 시큐리티를 사용하는 도중 한글 인코딩에 문제가 생겨 이를 해결한 방법에 대해 정리해보았다.

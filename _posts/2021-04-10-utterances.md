@@ -4,6 +4,7 @@ categories: blog
 tags: ['blog']
 header:
     teaser: /assets/teasers/happy-pug.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 
 # 블로그 댓글 시스템 변경 (21/4/9)

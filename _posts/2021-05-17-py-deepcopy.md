@@ -4,6 +4,7 @@ categories: python
 tags: ['python', 'deepcopy']
 header:
     teaser: /assets/teasers/python.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 
 # 개요

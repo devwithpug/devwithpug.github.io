@@ -4,6 +4,7 @@ categories: spring
 tags: ['spring', 'springsecurity', 'java']
 header:
     teaser: /assets/teasers/springsecurity.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 
 스프링 시큐리티를 공부하면서 인가 권한을 계층적으로 구성하는 방법에 대해 정리해보았다.

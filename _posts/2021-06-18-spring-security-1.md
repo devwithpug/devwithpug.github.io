@@ -4,6 +4,7 @@ categories: spring
 tags: ['spring', 'springsecurity', 'java']
 header:
     teaser: /assets/teasers/springsecurity.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 
 공부중인 스프링 시큐리티의 로직 케이스 및 아키텍처에 대해 정리해보았다.

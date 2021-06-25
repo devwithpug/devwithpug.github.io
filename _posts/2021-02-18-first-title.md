@@ -4,6 +4,7 @@ categories: blog
 tags: ['blog']
 header:
     teaser: /assets/teasers/happy-pug.jpg
+last_modified_at: 2021-06-25T00:00:00+09:00
 ---
 ```python
 import 첫번째_게시글 from devwithpug.github.io
