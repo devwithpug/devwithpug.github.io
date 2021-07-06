@@ -72,7 +72,7 @@ developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 * `Intellij IDEA : Run/Debug Configurations`
 
-![image](https://user-images.githubusercontent.com/69145799/124625248-9af49100-deb8-11eb-8662-a670ae02e5d2.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/124625248-9af49100-deb8-11eb-8662-a670ae02e5d2.png){:.align-center}](https://user-images.githubusercontent.com/69145799/124625248-9af49100-deb8-11eb-8662-a670ae02e5d2.png)
 
 * 디버깅 중에 새롭게 빌드를 한 경우
 
