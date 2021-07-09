@@ -174,6 +174,8 @@ Bill bill2 = modelMapper.map(request, Bill.class);
 
 ![image](https://user-images.githubusercontent.com/69145799/125114496-017de700-e125-11eb-8b4e-edc12da508d1.png){:.align-center}
 
+> ⬆ Converter를 통해 정상적으로 타입이 변환 되었다.
+
 ### 매핑 skip 하기
 
 위와는 별개로 클래스의 특정 프로퍼티는 매핑이 이루어지지 않도록 설정하는 것도 가능하다.
