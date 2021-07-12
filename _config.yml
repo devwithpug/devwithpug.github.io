@@ -275,6 +275,11 @@ compress_html:
 
 # Defaults
 defaults:
+  # others
+  - scope:
+      path: ""
+    values:
+      sitemap: false
   # _posts
   - scope:
       path: ""
@@ -289,6 +294,7 @@ defaults:
       show_date: true
       toc: true
       toc_sticky: true
+      sitemap: true
 
 # for posts date format
 date_format: "%Y, %m월 %d일"

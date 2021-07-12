@@ -35,3 +35,7 @@ docs
 
 # post
 *[x]*
+
+# travis
+
+.travis.yml
