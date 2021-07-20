@@ -17,6 +17,7 @@ __Java, Spring, JPA, MySQL, Python__
 
 ## 활동
 
+* 2021.07 ~ [AUSG 5th](https://ausg.me){:target="_blank"}
 * 2017.03 ~ 경기대학교 컴퓨터공학부 학사과정
 
 ## 프로젝트
