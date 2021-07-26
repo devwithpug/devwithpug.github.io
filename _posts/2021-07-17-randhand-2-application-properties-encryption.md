@@ -127,7 +127,7 @@ spring:
 
 > ⬆ config-service 접속 결과(모든 설정 파일들을 GET 할 수 있으며 암호문이 복호화 된 상태로 출력된다.)
 
-# 마이크로 서비스에 설정 파일 적용
+# 마이크로 서비스 설정 파일 적용
 
 * config-service와 동일한 의존성 추가 `build.gradle`
 
