@@ -1,5 +1,5 @@
 ---
-title: '랜손챗 - Github Actions, AWS CodeDeploy로 CI/CD 파이프라인 구축'
+title: '랜손챗 - Github Actions, AWS CodeDeploy로 CI/CD 구축'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
