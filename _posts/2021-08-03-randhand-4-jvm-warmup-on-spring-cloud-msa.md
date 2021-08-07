@@ -1,5 +1,5 @@
 ---
-title: '랜손챗 - JVM Warm Up으로 스프링 클라우드의 첫 번째 요청 딜레이 없애기'
+title: 'JVM Warm Up으로 스프링 클라우드의 첫 번째 요청 딜레이 없애기'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
@@ -25,7 +25,7 @@ __[<font size="50">👋랜손챗 프로젝트 깃허브 바로가기</font>](htt
 
 * MSA 구성 요약
 
-![image](https://user-images.githubusercontent.com/69145799/127898508-4e9aefeb-05ac-49d9-b632-1ba48334d403.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/127898508-4e9aefeb-05ac-49d9-b632-1ba48334d403.png){:.align-center}](https://user-images.githubusercontent.com/69145799/127898508-4e9aefeb-05ac-49d9-b632-1ba48334d403.png)
 
 문제를 해결하기 위해 어떤 시도를 했는지, 그리고 어떤 결과를 얻었는지 정리해보았다.
 
@@ -41,7 +41,7 @@ t2.micro 인스턴스의 컴퓨팅 파워가 좋지 않아서 위와 같은 결�
 
 # 테스트
 
-각각의 테스트는 로컬 환경(M1)에서 진행했으며 백그라운드 환경을 서버와 동일하게 구성하였다.
+각각의 테스트는 로컬 환경(Mac mini M1 16GB RAM)에서 진행했으며 백그라운드 환경을 서버와 동일하게 구성하였다.
 
 1. `chat-service` 만 분리하여 첫 번째 요청 테스트
 2. MSA 환경에서 유레카 서버를 제외한 모든 서비스(gateway, chat, ...)가 재기동 된 경우 첫 번째 요청 테스트

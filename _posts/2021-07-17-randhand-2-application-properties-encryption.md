@@ -1,5 +1,5 @@
 ---
-title: '랜손챗 - application.yml 설정 파일 암호화 및 외부 관리'
+title: '스프링 부트 application.yml 설정 파일 암호화 및 외부 관리'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
@@ -90,7 +90,7 @@ encrypt:
 
 생성한 암호화 키를 통하여 즉석에서 암호화 복호화가 가능하다. 서버를 기동한 후 `POST : localhost:8888/encrypt`, `POST : localhost:8888/decrypt` 요청을 통해 plain text 를 전송하면 된다.
 
-![image](https://user-images.githubusercontent.com/69145799/125932372-51845eeb-d536-4741-a673-6c07a7760c87.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125932372-51845eeb-d536-4741-a673-6c07a7760c87.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125932372-51845eeb-d536-4741-a673-6c07a7760c87.png)
 
 ```yml
 spring:
@@ -107,23 +107,23 @@ spring:
 
 ## RabbitMQ 의 메시징 큐 서비스 이용
 
-![image](https://user-images.githubusercontent.com/69145799/125928374-31bcac9a-ace7-4539-8082-e3cd9319fadf.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125928374-31bcac9a-ace7-4539-8082-e3cd9319fadf.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125928374-31bcac9a-ace7-4539-8082-e3cd9319fadf.png)
 
-![image](https://user-images.githubusercontent.com/69145799/125930672-f911dddc-0a5f-40f7-85d4-99361013270c.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125930672-f911dddc-0a5f-40f7-85d4-99361013270c.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125930672-f911dddc-0a5f-40f7-85d4-99361013270c.png)
 
 `application.yml` 설정 파일에 rabbitmq 관련 설정들을 해주지 않으면 기본 값으로 localhost:5672, guest 계정으로 스프링 부트와 연동이 된다.
 (배포 시에는 host, port 값 설정이 필요하다!)
 
 ## Spring Cloud Bus
 
-![image](https://user-images.githubusercontent.com/69145799/125930345-a1b0cbc4-3d44-43af-9382-5ca95386308c.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125930345-a1b0cbc4-3d44-43af-9382-5ca95386308c.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125930345-a1b0cbc4-3d44-43af-9382-5ca95386308c.png)
 
 
 `GET : localhost:8888/bus/refresh` 또는 `GET : localhost:8888/actuator/busrefresh` 를 통하여 실시간 설정 파일 수정이 가능하다.
 
 ## Spring Cloud Config
 
-![image](https://user-images.githubusercontent.com/69145799/127014523-9b795e1d-6998-49d8-b89a-dcdcd709425a.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/127014523-9b795e1d-6998-49d8-b89a-dcdcd709425a.png){:.align-center}](https://user-images.githubusercontent.com/69145799/127014523-9b795e1d-6998-49d8-b89a-dcdcd709425a.png)
 
 > ⬆ config-service 접속 결과(모든 설정 파일들을 GET 할 수 있으며 암호문이 복호화 된 상태로 출력된다.)
 
@@ -151,6 +151,8 @@ spring:
 ```
 
 > ⬆ 서비스 시작 시 설정된 uri에서 여러 프로파일들을 가져오게 된다.
+
+> 구현된 코드는 [RandHand-config](https://github.com/devwithpug/RandHand-config){:target="_blank"}, [config-service](https://github.com/devwithpug/RandHand-Chat/tree/main/backend/config-service){:target="_blank"} 에서 확인하실 수 있습니다.
 
 # References
 

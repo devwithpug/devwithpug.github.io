@@ -1,5 +1,5 @@
 ---
-title: '랜손챗 - Github Actions, AWS CodeDeploy로 CI/CD 구축'
+title: 'Github Actions, AWS CodeDeploy로 CI/CD 구축'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
@@ -170,7 +170,7 @@ hooks:
 
 `CodeDeploy` 는 배포 트리거가 작동될 때마다 변경사항을 감지하여 CD 파이프라인을 작동하게 되는데 이때 변경사항은 깃헙 커밋 ID에 의존하게 된다.
 
-![image](https://user-images.githubusercontent.com/69145799/126743833-6c3bbcb3-7492-4165-90de-36b8cee0aca0.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/126743833-6c3bbcb3-7492-4165-90de-36b8cee0aca0.png){:.align-center}](https://user-images.githubusercontent.com/69145799/126743833-6c3bbcb3-7492-4165-90de-36b8cee0aca0.png)
 
 ## 문제점
 
@@ -178,7 +178,7 @@ CD를 구현하면서 생각보다 애로사항이 많았다. 먼저 사용하�
 
 랜손챗 프로젝트에서 현재로서는 8개의 도커 컨테이너가 실행되어야 한다..^^ 이를 EC2에서 버틸 수 있을지도 궁금했고 여러 테스트를 해보았다.
 
-![image](https://user-images.githubusercontent.com/69145799/126745766-89a5f477-49e4-4edc-94f7-34610ed14b4d.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/126745766-89a5f477-49e4-4edc-94f7-34610ed14b4d.png){:.align-center}](https://user-images.githubusercontent.com/69145799/126745766-89a5f477-49e4-4edc-94f7-34610ed14b4d.png)
 
 > ⬆ docker-compose 컨테이너의 초기 구성
 

@@ -1,5 +1,5 @@
 ---
-title: '랜손챗 - 스프링 시큐리티 JWT 인증 방식 도입'
+title: '스프링 시큐리티 JWT 인증 방식 도입'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
@@ -352,13 +352,15 @@ spring:
 
 ## JWT Authentication testing via Postman
 
-![image](https://user-images.githubusercontent.com/69145799/125286876-3e312480-e357-11eb-938d-35db65dfaa90.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125286876-3e312480-e357-11eb-938d-35db65dfaa90.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125286876-3e312480-e357-11eb-938d-35db65dfaa90.png)
 
 > Login
 
-![image](https://user-images.githubusercontent.com/69145799/125287157-8bad9180-e357-11eb-9795-9fa0d5d25e82.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/125287157-8bad9180-e357-11eb-9795-9fa0d5d25e82.png){:.align-center}](https://user-images.githubusercontent.com/69145799/125287157-8bad9180-e357-11eb-9795-9fa0d5d25e82.png)
 
 > JWT 인증 정상 작동
+
+> 구현된 코드는 [chat-service](https://github.com/devwithpug/RandHand-Chat/tree/main/backend/chat-service/src/main/java/io/kgu/chatservice/security){:target="_blank"} 에서 확인하실 수 있습니다.
 
 # References
 

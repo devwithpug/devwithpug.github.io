@@ -399,7 +399,7 @@ $ docker context use [context-이름]
 
 ## 결과
 
-![image](https://user-images.githubusercontent.com/69145799/126995044-21a4a30e-be45-4613-bb33-ebf9383182cc.png){:.align-center}
+[![image](https://user-images.githubusercontent.com/69145799/126995044-21a4a30e-be45-4613-bb33-ebf9383182cc.png){:.align-center}](https://user-images.githubusercontent.com/69145799/126995044-21a4a30e-be45-4613-bb33-ebf9383182cc.png)
 
 정상적으로 원격 서버의 정보를 가져올 수 있었다.
 
