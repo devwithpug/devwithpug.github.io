@@ -3,7 +3,7 @@ title: '스프링 부트 application.yml 설정 파일 암호화 및 외부 관�
 categories: project
 tags: ['project', 'randhand-chat']
 header:
-    teaser: /assets/teasers/randhand.jpg
+    teaser: /assets/teasers/springcloud.jpg
 last_modified_at: 2021-07-27T00:00:00+09:00
 ---
 

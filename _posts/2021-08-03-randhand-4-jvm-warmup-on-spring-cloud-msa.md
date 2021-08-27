@@ -3,7 +3,7 @@ title: 'JVM Warm Up으로 스프링 클라우드의 첫 번째 요청 딜레이 
 categories: project
 tags: ['project', 'randhand-chat']
 header:
-    teaser: /assets/teasers/randhand.jpg
+    teaser: /assets/teasers/springcloud.jpg
 ---
 
 __[<font size="50">👋랜손챗 프로젝트 깃허브 바로가기</font>](https://github.com/devwithpug/RandHand-Chat){:target="_blank"}{:size="50pt"}__

@@ -1,9 +1,9 @@
 ---
-title: '스프링 시큐리티 JWT 인증 방식 도입'
+title: '스프링 시큐리티 - JWT 인증 방식 도입 하기'
 categories: project
 tags: ['project', 'randhand-chat']
 header:
-    teaser: /assets/teasers/randhand.jpg
+    teaser: /assets/teasers/springsecurity.jpg
 last_modified_at: 2021-07-26T00:00:00+09:00
 ---
 __[<font size="50">👋랜손챗 프로젝트 깃허브 바로가기</font>](https://github.com/devwithpug/RandHand-Chat){:target="_blank"}{:size="50pt"}__
