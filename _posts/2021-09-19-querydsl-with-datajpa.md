@@ -1,5 +1,5 @@
 ---
-title: 'Querydsl로 안전한 쿼리 작성하기 + DataJPA'
+title: 'Querydsl으로 안전한 쿼리 작성하기 + DataJPA'
 categories: java
 tags: ['java', 'jpa', 'querydsl']
 header:
