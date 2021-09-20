@@ -5,15 +5,17 @@ layout: single
 author_profile: false
 ---
 
+![pug](../assets/images/pug.gif)
+
 # About Me
 
-* 발견한 문제를 해결할 때 가장 큰 성취감을 느낍니다. 
+* 인프라의 구성과 연동 및 상호작용에 관심이 많습니다.
 * 공동체를 선호하며 커뮤니케이션이 코딩 능력만큼 중요하다고 생각합니다.
-* 백엔드, 클라우드에 관심이 많습니다.
+* 백엔드, MSA, DevOps, 클라우드에 관심이 많습니다.
 
 ## 기술 스택
 
-__Java, Spring, JPA, MySQL, Python__
+__Java, Spring, JPA, MySQL, Python, AWS__
 
 ## 활동
 
@@ -24,21 +26,30 @@ __Java, Spring, JPA, MySQL, Python__
 
 #### 2021
 
+* [RandHand-Chat: 랜손챗](https://github.com/devwithpug/RandHand-Chat){:target="_blank"}
+    - '과학기술정보통신부' 주최 [2021 공개SW 개발자대회](https://www.oss.kr/dev_competition){:target="_blank"} 본선 진출
+    - Hand Gesture가 동일한 사람들끼리 랜덤으로 채팅을 매칭시켜주는 애플리케이션 서비스
+    - `3인 프로젝트` `PM` `Server` `Backend`
+    - 기술스택: __Java, Spring, MSA, DataJPA, MariaDB, Docker, AWS__
 * [Booking_System](https://github.com/devwithpug/Booking_System){:target="_blank"}
-    - 레스토랑 예약 웹 프로그래밍
-    - __Java, Spring, DataJPA, MariaDB__
+    - 레스토랑 예약 웹 프로그래밍 
+    - `4인 프로젝트` `PM` `Backend`
+    - 기술스택: __Java, Spring, DataJPA, MariaDB__
 * [emotion_detect_project](https://github.com/devwithpug/emotion_detect_project){:target="_blank"}
     - 얼굴 표정 인식 모델 학습 & 학습한 모델을 이용한 웹 서비스
-    - __pytorch, Django, Spring, REST API__
+    - `2인 프로젝트` `Backend`
+    - 기술스택: __pytorch, Django, Spring, REST API__
 
 #### 2020
 
-* [FTA](https://github.com/devwithpug/FTA){:target="_blank"}
-    - World of Warcraft API, mongoDB를 이용한 경매장 봇
-    - __Python, mongoDB, discord.py__
+* [FTA: For The Alliance](https://github.com/devwithpug/FTA){:target="_blank"}
+    - World of Warcraft API, mongoDB를 이용한 경매장 봇 
+    - `개인프로젝트` `디스코드 봇`
+    - 기술스택: __Python, mongoDB, discord.py__
 * [SABot](https://github.com/devwithpug/SABot){:target="_blank"}
-    - Riot API를 이용한 League of Legends 실시간 매치 알림 봇
-    - __Python, discord.py__
+    - Riot API를 이용한 League of Legends 실시간 매치 알림 봇 
+    - `개인프로젝트` `디스코드 봇`
+    - 기술스택: __Python, discord.py__
 
 ## 수상 경력 & 자격증
 
