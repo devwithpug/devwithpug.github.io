@@ -59,4 +59,4 @@ __Java, Spring, JPA, MySQL, Python, AWS__
 
 ## 연락처
 
-* [zmfjscl789@gmail.com](mailto:zmfjscl789@gmail.com)
+* [devwithpug@kakao.com](mailto:devwithpug@kakao.com)
