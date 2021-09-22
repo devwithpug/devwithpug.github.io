@@ -95,16 +95,9 @@ jobs:
     - name: Build & Push gesture-service
       uses: docker/build-push-action@v2
       with:
-        context: ./backend/gesture-service/app
+        context: ./backend/gesture-service
         push: true
         tags: devwithpug/gesture-service:0.1
-
-    - name: Build & Push randhand-kafka-consumer
-      uses: docker/build-push-action@v2
-      with:
-        context: ./backend/gesture-service/consumer
-        push: true
-        tags: devwithpug/randhand-kafka-consumer:0.1
 
     - name: EC2 인스턴스 내부의 CodeDeploy 트리거 발동
       run: aws deploy --region ap-northeast-2 create-deployment --application-name CodeDeploy-application-randhand --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name CodeDeploy-group-randhand --github-location repository=devwithpug/RandHand-Chat,commitId=${GITHUB_SHA}
@@ -113,6 +106,8 @@ jobs:
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         Default_region_name: ap-northeast-2
 ```
+
+> 21.09.23) MSA 서비스 최적화를 통해 코드 수정됨.
 
 조금 비효율적이지만.. 각각의 마이크로 서비스들을 빌드&푸시 한 후에 CD 트리거를 호출하도록 구성했다. 
 
@@ -200,7 +195,6 @@ docker pull devwithpug/config-service:0.1
 docker pull devwithpug/gateway-service:0.1
 docker pull devwithpug/chat-service:0.1
 docker pull devwithpug/gesture-service:0.1
-docker pull devwithpug/randhand-kafka-consumer:0.1
 
 /usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d rabbitmq
 /home/ec2-user/sleep.sh
@@ -210,16 +204,12 @@ docker pull devwithpug/randhand-kafka-consumer:0.1
 /home/ec2-user/sleep.sh
 /usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d gateway-service
 /home/ec2-user/sleep.sh
-/usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d zookeeper
-/home/ec2-user/sleep.sh
-/usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d kafka
-/home/ec2-user/sleep.sh
 /usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d chat-service
 /home/ec2-user/sleep.sh
 /usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d gesture-service
-/home/ec2-user/sleep.sh
-/usr/local/bin/docker-compose -f /home/ec2-user/docker-compose.yml up -d randhand-kafka-consumer
 ```
+
+> 21.09.23) MSA 서비스 최적화를 통해 코드 수정됨.
 
 각각의 도커 컨테이너가 실행된 후에 `sleep 60` 커맨드로 60초간 딜레이를 주었다. 이후 테스트를 진행해보니 문제없이 배포가 완료되었으며 EC2 인스턴스도 정상적으로 작동하는 것을 확인할 수 있었다!
 
