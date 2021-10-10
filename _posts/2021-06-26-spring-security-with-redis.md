@@ -109,9 +109,9 @@ spring:
 
 |                           | TPS     | Redis CPU | Redis Connection | 응답 속도 |
 | :------------------------ | :------ | :-------- | :--------------- | :-------- |
-| jedis no connection pool  | 31,000  | 20%       | 35               | 100ms     |
-| jedis use connection pool | 55,000  | 69.5%     | 515              | 50ms      |
-| leffuce                   | 100,000 | 7%        | 6                | 7.5ms     |
+| Jedis no connection pool  | 31,000  | 20%       | 35               | 100ms     |
+| Jedis use connection pool | 55,000  | 69.5%     | 515              | 50ms      |
+| Lettuce                   | 100,000 | 7%        | 6                | 7.5ms     |
 
 추가적으로 성능뿐만 아니라 잘 만들어진 __공식 문서, 깔끔하게 디자인된 코드, 빠른 피드백__ 등의 장점을 가지고 있어서 오픈소스로써 많이 사용되는 것 같았다.
 
