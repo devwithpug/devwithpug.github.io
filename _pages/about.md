@@ -16,7 +16,7 @@ author_profile: false
 
 ## 기술 스택
 
-__Java, Spring, JPA, MySQL, Python, AWS__
+__Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 
 ## 활동
 
@@ -28,7 +28,7 @@ __Java, Spring, JPA, MySQL, Python, AWS__
 #### 2021
 
 * [RandHand-Chat: 랜손챗](https://github.com/devwithpug/RandHand-Chat){:target="_blank"}
-    - '과학기술정보통신부' 주최 [2021 공개SW 개발자대회](https://www.oss.kr/dev_competition){:target="_blank"} 본선 진출
+    - '과학기술정보통신부' 주최 [2021 공개SW 개발자대회](https://www.oss.kr/dev_competition){:target="_blank"} 은상 수상
     - Hand Gesture가 동일한 사람들끼리 랜덤으로 채팅을 매칭시켜주는 애플리케이션 서비스
     - `3인 프로젝트` `PM` `Server` `Backend`
     - 기술스택: __Java, Spring, MSA, DataJPA, MariaDB, Docker, AWS__
