@@ -54,6 +54,8 @@ __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 
 ## 수상 경력 & 자격증
 
+* 2021.11 [AWS Certified Solutions Architect - Associate (SAA-C02)](https://www.credly.com/badges/1414f257-24af-4c1f-a785-087fc004191f/public_url){:target="_blank"}
+* 2021.11 [과학기술정보통신부 주최 2021 공개SW 개발자대회 은상](https://www.oss.kr/dev_competition_notice/show/eafbc679-e341-4d07-9dd3-8e28e5443358){:target="_blank"}
 * 2021.09 SQLD (제42회 SQL 개발자 자격 시험)
 * 2021.05 TOPCIT 15회 정기평가 3등급 (496점)
 * 2017.06 교내 프로그래밍 경진대회 장려상
