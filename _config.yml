@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 # Site Settings
 github                   : [metadata]
 locale                   : "ko-KR"
-title                    : ""
+title                    : "공부하며 끄적이는 장소 🐶"
 title_separator          : " "
 subtitle                 : "공부하며 끄적이는 장소" # site tagline that appears below site title in masthead
 name                     : "devwithpug"
