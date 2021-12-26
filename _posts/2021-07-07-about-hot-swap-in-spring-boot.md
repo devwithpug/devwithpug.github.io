@@ -99,7 +99,7 @@ developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 새롭게 추가되는 클래스나 메소드의 경우 연관성을 가지는 `old-class` 가 존재하지 않으므로 이를 교체(HotSwap) 할 수 없는 것이다.
 
-> 추가 (21.12.28)   
+> 추가 (21.12.21)   
 > DevTools를 사용하게 되면 스프링 애플리케이션은 JVM에서 두 개의 클래스 로더에 의해 로드된다.   
 > 
 > __1. 우리의 자바 코드, 속성 파일, 프로젝트의 src/main/** 와 함께 로드__   
