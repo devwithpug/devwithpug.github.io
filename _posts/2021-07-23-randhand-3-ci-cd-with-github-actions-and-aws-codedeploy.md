@@ -38,7 +38,7 @@ CI 워크플로우는 아래와 같이 구성했다.
 ## workflow
 
 ```yml
-name: Gradle 프로젝트 빌드 & 도커 빌드, 푸시 & AWS CodeDeploy 트리거 발동
+name: CI with parallel jobs
 
 on:
   push:
@@ -48,10 +48,8 @@ on:
 
 jobs:
 
-  RandHand-Chat-CI-CD:
-
+  eureka:
     runs-on: ubuntu-latest
-    
     steps:
     - uses: actions/checkout@v2
 
@@ -71,34 +69,30 @@ jobs:
         push: true
         tags: devwithpug/eureka-server:0.1
 
-    - name: Build & Push config-service
-      uses: docker/build-push-action@v2
-      with:
-        context: ./backend/config-service
-        push: true
-        tags: devwithpug/config-service:0.1
+  config:
+    runs-on: ubuntu-latest
+    steps:
+    # 생략
 
-    - name: Build & Push gateway-service
-      uses: docker/build-push-action@v2
-      with:
-        context: ./backend/gateway-service
-        push: true
-        tags: devwithpug/gateway-service:0.1
+  gateway:
+    runs-on: ubuntu-latest
+    steps:
+    # 생략
 
-    - name: Build & Push chat-service
-      uses: docker/build-push-action@v2
-      with:
-        context: ./backend/chat-service
-        push: true
-        tags: devwithpug/chat-service:0.1
+  chat:
+    runs-on: ubuntu-latest
+    steps:
+    # 생략
 
-    - name: Build & Push gesture-service
-      uses: docker/build-push-action@v2
-      with:
-        context: ./backend/gesture-service
-        push: true
-        tags: devwithpug/gesture-service:0.1
+  gesture:
+    runs-on: ubuntu-latest
+    steps:
+    # 생략
 
+  ci:
+    runs-on: ubuntu-latest
+    needs: [eureka, config, gateway, chat, gesture]
+    steps:
     - name: EC2 인스턴스 내부의 CodeDeploy 트리거 발동
       run: aws deploy --region ap-northeast-2 create-deployment --application-name CodeDeploy-application-randhand --deployment-config-name CodeDeployDefault.OneAtATime --deployment-group-name CodeDeploy-group-randhand --github-location repository=devwithpug/RandHand-Chat,commitId=${GITHUB_SHA}
       env:
@@ -112,6 +106,9 @@ jobs:
 조금 비효율적이지만.. 각각의 마이크로 서비스들을 빌드&푸시 한 후에 CD 트리거를 호출하도록 구성했다. 
 
 개선한다면 변경 또는 추가 된 서비스만 빌드하도록 구성하여 시간을 단축할 수 있을 것 같다.
+
+> 21.10.14) 각각의 서비스를 job으로 구성 -> 병렬적으로 CI 수행
+> Github Actions에 대해 공부하면서 여러개의 job으로 구성하여 간단하게 병렬 프로세스 구성이 가능한 것을 알게되었다.
 
 ## Dockerfile
 
