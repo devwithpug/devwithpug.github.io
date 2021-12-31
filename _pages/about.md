@@ -18,8 +18,9 @@ author_profile: false
 
 __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 
-## 활동
+## 커리어 & 활동
 
+* 2021.11 ~ 카카오 커머스
 * 2021.07 ~ [AUSG 5th](https://ausg.me){:target="_blank"}
 * 2017.03 ~ 경기대학교 컴퓨터공학부 학사과정
 
