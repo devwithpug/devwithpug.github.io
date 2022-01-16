@@ -112,7 +112,7 @@ blockquote {
   padding-right: 1em;
   // font-style: italic;
   border-left: 0.25em solid $primary-color;
-  background-color: rgb(242, 242, 242);
+  background-color: mix(#000, $background-color, 10%); 
 
   cite {
     font-style: italic;
@@ -171,6 +171,7 @@ td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-size: 0.8em;
+  color: #000;
   background: $code-background-color;
   border-radius: $border-radius;
 
