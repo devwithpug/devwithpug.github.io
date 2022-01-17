@@ -7,6 +7,18 @@ let setDarkMode = (isDark) => {
     localStorage.setItem('theme', isDark ? 'dark' : 'default');
 }
 
+let utterancesTheme = () => {
+    if (document.querySelector('.utterances-frame')) {
+        const theme = localStorage.theme === 'dark' ? 'github-dark' : 'github-light';
+        const message = {
+            type: 'set-theme',
+            theme: theme
+        };
+        const iframe = document.querySelector('.utterances-frame');
+        iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+    }
+}
+
 if (darkTheme) {
     let currentTheme = localStorage.getItem('theme');
     let isDarkMode = false;
@@ -17,6 +29,7 @@ if (darkTheme) {
     }
 
     setDarkMode(isDarkMode);
+    utterancesTheme();
 
     let toggleThemeBtn = document.getElementById("toggle_dark_theme")
     if (toggleThemeBtn) {
@@ -27,19 +40,6 @@ if (darkTheme) {
         setDarkMode(e.target.checked);
     }
 
-    let utterancesTheme = () => {
-        if (document.querySelector('.utterances-frame')) {
-            const theme = localStorage.theme === 'dark' ? 'github-dark' : 'github-light';
-            const message = {
-                type: 'set-theme',
-                theme: theme
-            };
-            const iframe = document.querySelector('.utterances-frame');
-            iframe.contentWindow.postMessage(message, 'https://utteranc.es');
-        }
-    }
-
     toggleThemeBtn.addEventListener('click', changeTheme);
     toggleThemeBtn.addEventListener('click', utterancesTheme);
-    // toggleThemeBtn.addEventListener('click', function(e) {console.log(this)});
 }
