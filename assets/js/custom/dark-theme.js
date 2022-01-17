@@ -29,7 +29,6 @@ if (darkTheme) {
     }
 
     setDarkMode(isDarkMode);
-    utterancesTheme();
 
     let toggleThemeBtn = document.getElementById("toggle_dark_theme")
     if (toggleThemeBtn) {
