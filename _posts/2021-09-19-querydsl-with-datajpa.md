@@ -235,6 +235,17 @@ List<User> resultQuerydsl = queryFactory
 
 count 쿼리가 모든 dialect에서 또는 다중 그룹 쿼리에서 완벽하게 지원되지 않기 때문에 count 정도는 자바에서 처리하도록 권고하고 있다. 서비스의 크기에 따라 다르겠지만 최대한 애플리케이션의 부하를 DB로 넘기고 싶은 경우에는 count 쿼리를 어떻게 날릴지 한 번쯤 고민해 보아야 할 것 같다.
 
+> __내용 추가 (22.01.20)__
+>
+> `List.size()` 의 시간 복잡도는 `O(n)` 이다. 그렇다면 DB는 어떨까?
+>
+> 관련 자료를 찾아보니 DB의 count(*) 쿼리는 DB 엔진마다 시간 복잡도가 다르다고 한다.
+> * MyISAM의 경우 전체 row 수가 각 테이블에 저장되므로 count(*) 는 `O(1)` 의 시간복잡도를 가진다.
+> * InnoDB의 경우 전체 row 수가 저장되지 않으므로 full scan이 필요하다. 시간복잡도 `O(n)`
+> 
+> 출처 : [stackoverflow - MYSQL - Complexity of: SELECT COUNT(*) FROM MyTable;](https://stackoverflow.com/questions/5257973/mysql-complexity-of-select-count-from-mytable){:target="_blank"}
+
+
 따라서 아래와 같이 페이징 쿼리문을 작성하면 된다.
 
 ```java
@@ -621,6 +632,10 @@ public class UserRepositoryImpl implements UserRepositoryCustom {
 `DataJPA` 를 사용하면서 메소드 네이밍으로는 구현할 수 없는 복잡한 쿼리들을 `JPQL` 없이도 모두 자바 코드로 사용할 수 있는 점이 매우 편리한 것 같다. 물론 `JPA` 의 기능을 그대로 이어받았기 때문에 인라인 뷰를 사용할 수 없거나 복잡한 그룹에 대해 제약사항이 있기는 하다. 하지만 이런 문제들은 `Querydsl` 의 문제라고 할 수는 없으며 복잡한 쿼리를 여러 개의 쿼리로 분리하여 사용하거나 네이티브 쿼리를 작성하는 대체 방법들을 사용하면 된다.
 
 `Querydsl` 을 통해 메소드 체이닝으로 쿼리문을 하나하나 작성하다 보면 그동안 `JPQL` 의 문자열들을 다룰 때 얼마나 귀찮은 점이 많았는지를 생각하게 되며 자바로 쿼리문을 작성하는 진정한 재미를 느낄 수 있었다!
+
+> __모든 코드는 실제 작성하였으며, 직접 실행한 결과들을 글에 담았습니다.__   
+> __내용에 오류가 있을 수 있습니다. 관련 코멘트를 주시면 반영하겠습니다.__   
+> __모든 의견은 언제나 환영합니다 😊__
 
 # References
 
