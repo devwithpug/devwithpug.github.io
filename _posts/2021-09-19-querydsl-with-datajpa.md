@@ -233,15 +233,15 @@ List<User> resultQuerydsl = queryFactory
 
 >  fetchCount() : An implementation is allowed to fall back to fetch().size().
 
-count 쿼리가 모든 dialect에서 또는 다중 그룹 쿼리에서 완벽하게 지원되지 않기 때문에 count 정도는 자바에서 처리하도록 권고하고 있다. 서비스의 크기에 따라 다르겠지만 최대한 애플리케이션의 부하를 DB로 넘기고 싶은 경우에는 count 쿼리를 어떻게 날릴지 한 번쯤 고민해 보아야 할 것 같다.
+count 쿼리가 모든 dialect에서 또는 다중 그룹 쿼리에서 완벽하게 지원되지 않기 때문에 deprecated 되었다. `fetchCount()` 대신 `fetch().size()` 로 동일한 결과를 얻을 수 있다고 설명한다. 서비스의 크기에 따라 적절한 방법으로 count 를 받아와야 하므로 이에 대한 고민이 필요할 것 같다.
 
 > __내용 추가 (22.01.20)__
 >
 > `List.size()` 의 시간 복잡도는 `O(n)` 이다. 그렇다면 DB는 어떨까?
 >
 > 관련 자료를 찾아보니 DB의 count(*) 쿼리는 DB 엔진마다 시간 복잡도가 다르다고 한다.
-> * MyISAM의 경우 전체 row 수가 각 테이블에 저장되므로 count(*) 는 `O(1)` 의 시간복잡도를 가진다.
-> * InnoDB의 경우 전체 row 수가 저장되지 않으므로 full scan이 필요하다. 시간복잡도 `O(n)`
+> * MyISAM의 경우: 전체 row 수가 각 테이블에 저장되므로 count(*) 는 `O(1)` 의 시간복잡도를 가진다.
+> * InnoDB의 경우: 전체 row 수가 저장되지 않으므로 full scan이 필요하다. 시간복잡도 `O(n)`
 > 
 > 출처 : [stackoverflow - MYSQL - Complexity of: SELECT COUNT(*) FROM MyTable;](https://stackoverflow.com/questions/5257973/mysql-complexity-of-select-count-from-mytable){:target="_blank"}
 
