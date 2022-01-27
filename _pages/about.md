@@ -9,22 +9,22 @@ author_profile: false
 
 # About Me
 
-* 아키텍처의 구성과 연동 및 상호작용에 관심이 많습니다.
-* 코드리뷰에 흥미를 느끼는 개발자가 되고 싶습니다.
-* 공동체를 선호하며 커뮤니케이션이 코딩 능력만큼 중요하다고 생각합니다.
 * 백엔드, MSA, DevOps, 클라우드에 관심이 많습니다.
+* 아키텍처의 구성과 연동 및 상호작용에 관심이 많습니다.
+* 공동체를 선호하며 커뮤니케이션 능력이 코딩만큼 중요하다고 생각합니다.
+* 코드 리뷰에 흥미를 느끼는 개발자가 되고 싶습니다.
 
-## 기술 스택
+## Skills
 
 __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 
-## 커리어 & 활동
+## Career & Activities
 
-* 2021.11 ~ 카카오 커머스
-* 2021.07 ~ [AUSG 5th](https://ausg.me){:target="_blank"}
-* 2017.03 ~ 경기대학교 컴퓨터공학부 학사과정
+* `2021.11 ~ 　ing　　`　Backend Engineer at Kakao Corp.
+* `2021.07 ~ 　ing　　`　[AUSG 5th](https://ausg.me){:target="_blank"}
+* `2017.03 ~ 2022.01`　경기대학교 컴퓨터공학부 학사과정 (휴학)
 
-## 프로젝트
+## Projects
 
 #### 2021
 
@@ -53,7 +53,7 @@ __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
     - `개인프로젝트` `디스코드 봇`
     - 기술스택: __Python, discord.py__
 
-## 수상 경력 & 자격증
+## Awards & Certificates
 
 * 2021.11 [AWS Certified Solutions Architect - Associate (SAA-C02)](https://www.credly.com/badges/1414f257-24af-4c1f-a785-087fc004191f/public_url){:target="_blank"}
 * 2021.11 [과학기술정보통신부 주최 2021 공개SW 개발자대회 은상](https://www.oss.kr/dev_competition_notice/show/eafbc679-e341-4d07-9dd3-8e28e5443358){:target="_blank"}
@@ -61,6 +61,6 @@ __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 * 2021.05 TOPCIT 15회 정기평가 3등급 (496점)
 * 2017.06 교내 프로그래밍 경진대회 장려상
 
-## 연락처
+## Contact
 
 * [devwithpug@kakao.com](mailto:devwithpug@kakao.com)
