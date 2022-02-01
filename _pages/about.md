@@ -5,7 +5,7 @@ layout: single
 author_profile: false
 ---
 
-![pug](../assets/images/pug.gif)
+![pug](../assets/images/pug.gif){:.align-center}
 
 # About Me
 
