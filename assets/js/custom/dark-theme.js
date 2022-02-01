@@ -9,7 +9,7 @@ let setDarkMode = (isDark) => {
 
 let utterancesTheme = () => {
     if (document.querySelector('.utterances-frame')) {
-        const theme = localStorage.theme === 'dark' ? 'github-dark' : 'github-light';
+        const theme = localStorage.theme === 'dark' ? 'photon-dark' : 'github-light';
         const message = {
             type: 'set-theme',
             theme: theme
