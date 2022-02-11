@@ -1,0 +1,13 @@
+<script>
+    $(document).ready(function() {
+        $('#back-to-top-img').hover(
+            function(e) {
+                e.preventDefault();
+                $('#back-to-top-img').attr("src", "/assets/images/back-to-top.gif");
+            },
+            function() {
+                $('#back-to-top-img').attr("src", "/assets/images/back-to-top.png");
+            }
+        );
+    });
+</script>
