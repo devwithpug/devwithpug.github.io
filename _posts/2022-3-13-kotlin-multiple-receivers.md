@@ -192,7 +192,26 @@ fun String.myFilter(predicate: (Char) -> Boolean) = apply {
 
 `apply` 를 사용하면 String의 수신 객체만 넘어오기 때문에 레이블을 사용하지 않아도 되지만.. `StringBuilder` 객체를 생성하고 연산이 끝난 후 문자열을 리턴해야 하기 때문에 `apply` 를 제대로 사용한다고 할 수 없으며, 코드가 그렇게 깔끔하지도 않다.
 
-개인적으로는 `(1) String 수신 객체를 레이블로 직접 명시하기` 가 가장 좋은 방법인 것 같다. `buildString` & `apply` 의 장점을 그대로 가져가면서 코드도 가장 짧게 표현할 수 있기 때문이다.
+- (4) 내부 로직을 확장 메서드로 추출하기
+
+```kotlin
+fun String.myFilter(predicate: (Char) -> Boolean) = 
+    buildString { filterString(predicate, this@myFilter) }
+
+private fun StringBuilder.filterString(predicate: (Char) -> Boolean, string: String) {
+    for (index in string.indices) {
+        val element = string[index]
+        if (predicate(element)) {
+            append(element)
+        }
+    }
+}
+```
+
+내부 필터링 로직을 `StringBuilder` 의 확장 메서드로 추출했다. 레이블을 최소한으로 사용할 수 있고, 코드 가독성 면에서도 좋은 코드라고 생각된다. 하지만 이러한 메서드는 종속성을 가지게 되고 다른 곳에서 재사용될 일이 없을 것 같아 조금 아쉽다.
+
+> 개인적으로는 (1), (4) 예제가 가장 좋은 방법인 것 같다.   
+> `buildString` & `apply` 의 장점을 그대로 가져가면서 메서드 내부 로직을 간결하게 표현할 수 있기 때문이다.
 
 # References
 
