@@ -44,7 +44,7 @@ HotSwap 기능의 사용법부터 관련된 용어(HotDeploy, HotReload) 들이 
 
 `HotDeploy` 는 자동 배포와 관련된 기능으로 시작 시 애플리케이션을 자동으로 배포하는 애플리케이션 컨테이너의 기능이다. 따라서 HotDeploy를 통해 JVM 프로세스를 다시 시작하지 않고도 응용 프로그램을 다시 배포할 수 있는 것이다.
 
-__하지만 HotDeploy는 IDE 또는 JVM의 기능이 아닌 것을 명심해야 한다.__ 따라서 이 기능은 전적으로 애플리케이션 서버에 달려있으며 HotSwap 과 HotSwap은 다르다!
+__HotDeploy는 IDE 또는 JVM의 기능이 아닌 애플리케이션 컨테이너의 기능이므로 `HotSwap` 과는 전혀 다른 기능이다!__
 
 - - - 
 
