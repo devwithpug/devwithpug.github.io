@@ -237,7 +237,7 @@ count 쿼리가 모든 dialect에서 또는 다중 그룹 쿼리에서 완벽하
 
 > __내용 추가 (22.01.20)__
 >
-> `List.size()` 의 시간 복잡도는 `O(n)` 이다. 그렇다면 DB는 어떨까?
+> List 인터페이스의 구현체인 `ArrayList.size()` 의 시간 복잡도는 `O(1)` 이다. 그렇다면 DB는 어떨까?
 >
 > 관련 자료를 찾아보니 DB의 count(*) 쿼리는 DB 엔진마다 시간 복잡도가 다르다고 한다.
 > * MyISAM의 경우: 전체 row 수가 각 테이블에 저장되므로 count(*) 는 `O(1)` 의 시간복잡도를 가진다.
@@ -260,7 +260,12 @@ public Page<User> findUserWithPaging(Pageable pageable) {
 			.limit(pageable.getPageSize()) // limit
 			.fetch();
 
-	return new PageImpl<>(content, pageable, content.size()); // 쿼리 결과로 페이징 객체 리턴
+        int totalSize = queryFactory // count 쿼리
+                        .selectFrom(user)
+                        .where(user.username.like("user_"))
+                        .fetch().size();
+
+	return new PageImpl<>(content, pageable, totalSize); // 쿼리 결과로 페이징 객체 리턴
 }
 
 ```
