@@ -21,7 +21,7 @@ __Java, Spring Frameworks, JPA, MySQL, Python, AWS__
 ## Career & Activities
 
 * `2021.11 ~ 　ing　　`　Backend Engineer at Kakao Corp.
-* `2021.07 ~ 　ing　　`　[AUSG 5th](https://ausg.me){:target="_blank"}
+* `2021.07 ~ 2022.06`　[AUSG 5th](https://ausg.me){:target="_blank"}
 * `2017.03 ~ 2022.01`　경기대학교 컴퓨터공학부 학사과정 (휴학)
 
 ## Projects
