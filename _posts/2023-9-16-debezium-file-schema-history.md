@@ -1,6 +1,6 @@
 ---
 title: 'Debezium Source Connector: schema history에 대해'
-categories: messaging
+categories: cdc
 tags: ['messaging', 'kafka', 'debezium', 'cdc']
 header:
     teaser: /assets/teasers/debezium-schema-history.png
