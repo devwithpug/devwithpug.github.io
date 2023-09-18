@@ -1,5 +1,5 @@
 ---
-title: 'Debezium Source Connector: schema history에 대해'
+title: 'Debezium connector for MySQL: schema history에 대해'
 categories: cdc
 tags: ['messaging', 'kafka', 'debezium', 'cdc']
 header:
