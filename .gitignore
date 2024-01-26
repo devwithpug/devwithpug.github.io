@@ -33,9 +33,5 @@ _gh_pages
 # docs
 docs
 
-# post
-*[x]*
-
 # travis
-
 .travis.yml
